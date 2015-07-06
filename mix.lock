@@ -1,0 +1,10 @@
+%{"amnesia": {:git, "git://github.com/meh/amnesia.git", "e6c941ed1f8ddc6089b8213991b2ba577cd75ba5", []},
+  "exquisite": {:hex, :exquisite, "0.1.4"},
+  "hackney": {:hex, :hackney, "1.2.0"},
+  "httpoison": {:hex, :httpoison, "0.7.0"},
+  "idna": {:hex, :idna, "1.0.2"},
+  "inflex": {:hex, :inflex, "1.0.0"},
+  "poison": {:hex, :poison, "1.4.0"},
+  "slacker": {:hex, :slacker, "0.0.1"},
+  "ssl_verify_hostname": {:hex, :ssl_verify_hostname, "1.0.5"},
+  "websocket_client": {:git, "git://github.com/jeremyong/websocket_client.git", "f6892c8b55004008ce2d52be7d98b156f3e34569", []}}
