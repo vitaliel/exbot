@@ -28,12 +28,14 @@ defdatabase Database do
 
   # this defines a table with other attributes as ordered set, and defines an
   # additional index as email, this improves lookup operations
-  deftable User, [{ :id, autoincrement }, :name, :email, :slack_id, :presence, :is_ops],
+  deftable User, [{ :id, autoincrement }, :name, :email,
+           :slack_id, :presence, :is_ops, :slack_login],
            type: :ordered_set, index: [:email] do
 
     # again not needed, but nice to have
     @type t :: %User{ id: non_neg_integer, name: String.t, email: String.t,
-                     slack_id: String.t, presence: String.t, is_ops: boolean }
+                     slack_id: String.t, presence: String.t, is_ops: boolean,
+                     slack_login: String.t }
 
     # this is a helper function to add a message to the user, using write
     # on the created records makes it write to the mnesia table

@@ -30,6 +30,7 @@ defmodule SlackBot.Mixfile do
   defp deps do
     [{:websocket_client, github: "jeremyong/websocket_client"},
      {:slacker,  "~> 0.0.1"},
+     {:assembla_api,  "~> 0.1.0", path: "../assembla_api"},
      {:amnesia, github: "meh/amnesia"}
     ]
   end

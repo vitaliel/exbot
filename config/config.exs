@@ -22,3 +22,11 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
+config :assembla_api,
+  method: :oauth2, # or :api_key
+  api_url: "https://api.assembla.com/v1",
+  client_id: "fill-me",
+  client_secret: "fill-me",
+  # api_key method
+  api_key: "fill-me",
+  api_secret: "fill-me"
